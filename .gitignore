@@ -1,0 +1,69 @@
+# ───────────────────────────────────────────
+#  Python / Backend
+# ───────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.env
+.env
+venv/
+.venv/
+env/
+*.egg-info/
+dist/
+build/
+.idea/
+.vscode/
+.vs/
+
+# Sensitive config – don't expose DB credentials
+# backend/config.py   # uncomment this line if you want to exclude it
+
+# Large binary / model files (add to Git LFS instead if needed)
+backend/resources/assets/models/*.tflite
+backend/image_encoder/EncodedFile.p
+backend/image_encoder/images/
+
+# Logs
+backend/logs/
+
+# ───────────────────────────────────────────
+#  Flutter
+# ───────────────────────────────────────────
+**/build/
+**/.dart_tool/
+**/.flutter-plugins
+**/.flutter-plugins-dependencies
+**/.pub-cache/
+**/.pub/
+**/pubspec.lock
+**/*.g.dart
+**/*.freezed.dart
+**/.idea/
+**/.vscode/
+
+# Android local files
+**/android/local.properties
+**/android/.gradle/
+**/android/captures/
+**/android/key.properties
+
+# iOS
+**/ios/Pods/
+**/ios/.symlinks/
+**/ios/Flutter/.last_build_id
+
+# macOS
+**/macos/Pods/
+
+# Windows
+**/windows/flutter/generated_plugin_registrant.cc
+**/windows/flutter/generated_plugin_registrant.h
+
+# ───────────────────────────────────────────
+#  OS
+# ───────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
